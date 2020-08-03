@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: "jdbc:mysql://121.89.177.244:3306/cdns?useUnicode=true&characterEncoding=UTF-8"
+      url: "jdbc:mysql://121.89.177.244:3306/csdn?useUnicode=true&characterEncoding=UTF-8"
       password: "22446688"
       username: "root"
   profiles:

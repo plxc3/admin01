@@ -27,7 +27,8 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-    @RequestMapping("/get/{id}")
+
+    @GetMapping("/get/{id}")
     public Result get(@PathVariable Integer id){
 
         User user=userService.getUserById(id);
@@ -54,7 +55,7 @@ public class UserController {
      * @param id
      * @return
      */
-    @RequestMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public Result delete(@PathVariable Integer id){
 
         if(userService.updateDeleted(id)){
@@ -84,6 +85,7 @@ public class UserController {
             return Result.getFail().setData("异常");
         }
     }
+
     /**
      * 分页查询
      */
